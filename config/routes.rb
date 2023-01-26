@@ -29,16 +29,29 @@ Rails.application.routes.draw do
   # Taurus
     get("/zodiacs/taurus", { :controller => "earth", :action => "bull" })
 
-  # get("/zodiacs/virgo", { :controller => "earth", :action => "maiden" })
-  # get("/zodiacs/capricorn", { :controller => "earth", :action => "goat" })
+  # Virgo
+    get("/zodiacs/virgo", { :controller => "earth", :action => "maiden" })
+
+  # Capricorn
+    get("/zodiacs/capricorn", { :controller => "earth", :action => "goat" })
   
-  # get("/zodiacs/gemini", { :controller => "air", :action => "twins" })
-  # get(" /zodiacs/libra", { :controller => "air", :action => "scales" })
-  # get ("/zodiacs/aquarius", { :controller => "air", :action => "waterbearer" })
+  # Gemini
+    get("/zodiacs/gemini", { :controller => "air", :action => "twins" })
   
-  # get("/zodiacs/cancer " { :controller => "earth" :action => "crab" })
-  # get("/zodiac/ scorpio", { :controller => "Water", :action => "scorpion" })
-  # get("/zodiacs/pisces", { :controller => "water", :action => "fish " })
+  # Libra
+    get("/zodiacs/libra", { :controller => "air", :action => "scales" })
+
+  # Aquarius
+    get("/zodiacs/aquarius", { :controller => "air", :action => "waterbearer" })
+  
+  # Cancer
+    get("/zodiacs/cancer", { :controller => "waterrrr", :action => "crab" })
+
+  # Scorpio
+    get("/zodiacs/scorpio", { :controller => "waterrrr", :action => "scorpion" })
+  
+  # Pisces 
+    get("/zodiacs/pisces", { :controller => "waterrrr", :action => "fish" })
 
   # PART 3: MORE R→C→A→V PRACTICE
   # ==========================
@@ -55,6 +68,7 @@ Rails.application.routes.draw do
   #  - Write the Ruby to make it dynamic, and work properly.
 
   # /roll/1/6
+    get("/roll/1/6", { :controller => "rolls", :action => "sixer"})
   # /roll/2/6
   # /roll/3/6
   # /roll/4/6
